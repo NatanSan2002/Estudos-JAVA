@@ -1,0 +1,17 @@
+public class NomeClasse{ ||| Classe dentro do arquivo.java
+
+void metodo1(){instruções;}; ||| Métodos dentro da classe
+void metodo2(){instruções;};
+
+public static void main(String[] args){ ||| Método Main, o primeiro método a ser executado dentro da classe. (Todo programa precisa de ao menos um)
+instruções;
+}
+
+}
+
+
+KEY-WORDS:
+
+public: método disponivel para qualquer classe acessa-la
+void: Significa que o método não tem return
+main: Método principal, o primeiro da classe a ser executado 
