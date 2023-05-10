@@ -1,3 +1,16 @@
+Terminal:
+javac Nome_arquivo.java ||| compila código java, gerando um arquivo .class 
+* o nome do arquivo tem que ser identico ao da Class dele
+
+java Nome_arquivo ||| Executa código do arquivo.class
+
+** não pode incluir o tipo.class do arquivo
+
+
+
+
+Arquivo .Java:
+
 public class NomeClasse{ ||| Classe dentro do arquivo.java
 
 void metodo1(){instruções;}; ||| Métodos dentro da classe
@@ -15,3 +28,33 @@ KEY-WORDS:
 public: método disponivel para qualquer classe acessa-la
 void: Significa que o método não tem return
 main: Método principal, o primeiro da classe a ser executado 
+
+
+Tipos Primitivos: Declarando Variaveis e seus tipos
+
+int     nome_var = 5;         ||| numero inteiro
+double  nome_var = 0.586;     ||| numero quebrado
+String  nome_var = "Texto";   ||| String
+boolean nome_var = true;      ||| Boleano: false/true 
+
+
+ARRAYS
+
+String[] nome_array = {vetor1,vetor2,vetor3} ||| Declarando Array de tipo String
+
+
+FUNÇÕES:
+
+
+ONLY JAVA
+System.out.print(conteudo)   ||| Exibe na saida do console o conteudo
+System.out.println(conteudo) ||| Quebra a linha e Exibe na saida do console o conteudo 
+
+
+GENERAL
+int var_nome = (int) (Math.random() * 5); ||| No metodo Math.random temos que especificar tmb se o valor de retorno dele sera INTeiro ou quebrado
+                                              e como temos uma conta, colocamos () nela para por em precedencia ela a conversão ao tipo int
+                                              ** o int de declaração de var só informa que a var é tipo int, não que converte-ra alguma coisa
+
+
+
