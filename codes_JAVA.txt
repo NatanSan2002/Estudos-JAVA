@@ -21,17 +21,25 @@ main: Método principal, o primeiro da classe a ser executado
 
 Tipos Primitivos: Declarando Variaveis e seus tipos
 
-int     nome_var = 5;         ||| numero inteiro
-double  nome_var = 0.586;     ||| numero quebrado
+int     nome_var = 5;         ||| numero inteiro (tmb tem o byte,short, e long)
+double  nome_var = 0.586;     ||| numero quebrado (tmb tem o float que é 32 bits)
 String  nome_var = "Texto";   ||| String
+char    nome_var = 1          ||| Caracterie Unico
 boolean nome_var = true;      ||| Boleano: false/true 
 
 
 ARRAYS
 
-String[] nome_array = {vetor1,vetor2,vetor3} ||| Declarando Array de tipo String
+int[] nome_array = {vetor1,vetor2,vetor3} ||| Declarando Array de tipo int
 
+int[] nome_array; 
+nome_array = new int[3] ||| Declarando array metodo 2 (o [3] é o numero de vetores máximo)
 
+Class_Abstrata [] nome_array = new Class_Abstrata[3]; ||| Declarando Array com tipo Ref.Objeto
+
+nome_array[0] = new Class_Abstrata() ||| Criando OBJ no vetor[0] do array
+nome_array[0].attr = conteudo        ||| dando valor ao atributo(var de instancia) do obj do vetor[0] criado 
+nome_array[0].Met()                  ||| Ativando metodo do OBJ do vetor[0] criado
 
 
 
