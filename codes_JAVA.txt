@@ -110,3 +110,6 @@ int var_nome = (int) (Math.random() * 5); ||| No metodo Math.random temos que es
 
 
 
+Integer.parseInt(String)                  ||| Converte valor em String em int (guardar valor em algum lugar) 
+Integer.toString(Int)                     ||| Converte valor em INT para String 
+
