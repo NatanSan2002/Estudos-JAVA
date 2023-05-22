@@ -15,6 +15,7 @@ GERAL
 KEY-WORDS: palavras que ficam antes das classes,variaveis etc...
 
 public: método disponivel para qualquer classe acessa-la
+static: var,metodo, podem ser acessados por toda a Classe diretamente. (devem ser declarados(a) no bloco principal da Classe) 
 void: Significa que o Método() não tem return(e se tivesse teria que ser posto nele o tipo do return, como int,String etc)
 main: Método principal, o primeiro da classe a ser executado 
 

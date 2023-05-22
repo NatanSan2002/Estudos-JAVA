@@ -1,28 +1,64 @@
-class Dotcom1{
-public static void main(String [] args){
+class Dotcom1 {
 
- int [] location_cells;
- location_cells = new int[6];
- location_cells[(int) (Math.random() * location_cells.length )] = true; 
+    static int hits = 0;
+    static int trys = 0;
+    static int[] location_cells;
 
- /*Criar outro array com 3 numeros random e colocar seus valores nos vetores do location cells */
-int hits;
+    public static void main(String[] args) {
 
+        location_cells = new int[6];
 
-for(int i = 0; i<location_cells.length; ++i){
- CheckShot( Integer.toString((int) (Math.random() * location_cells.length )));
-}
+        int[] sorteio = { (int) (Math.random() * location_cells.length),
+                (int) (Math.random() * location_cells.length), (int) (Math.random() * location_cells.length) };
 
-}
+        for (int i = 0; i < 3; ++i) {
+            location_cells[i] = sorteio[i];
+        }
 
-static String CheckShot(String gue){
+        for (int i = 0; i < 3 ; ++i) {
+            CheckShot(Integer.toString((int) (Math.random() * location_cells.length)));
+            System.out.println("test:"+(i+1));
 
-int guess = Integer.parseInt(gue);
+        }
 
-return "abc";
-}
+    }
 
-//void SetLocationCells(int[] loc){}
+    static void CheckShot(String gue) {
 
+        int guess = Integer.parseInt(gue);
+            
+                System.out.println("O Usuario Digitou o numero: " + guess);
 
+                boolean aceept = false;
+
+                for(int i = 0;i<location_cells.length;++i){
+                    if(guess == location_cells[i]){
+                     aceept = true;
+                    }
+                    }
+
+                ++trys;
+                 if (aceept == true) {
+                    ++hits;
+                    System.out.println("ACERTOU!");
+    
+                    
+                } else {
+                    System.out.println("Errou, Tente de novo");
+                }
+                if (hits >= 3) {
+                    System.out.println("Numero de acertos 3/3 Fim de JOGO!!!");
+                } else if (trys >= 3) {
+                        System.out.println("Numero de Tentativas alcançadas, You LOSE!!!");
+                        System.out.println("Numero de Acertos: "+hits);
+                    }
+            
+
+        
+
+     
+
+        
+
+    }
 }
