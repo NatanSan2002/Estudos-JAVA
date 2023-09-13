@@ -16,7 +16,7 @@ KEY-WORDS: palavras que ficam antes das classes,variaveis etc...
 
 public: método disponivel para qualquer classe acessa-la
 static: var,metodo, podem ser acessados por toda a Classe diretamente. (devem ser declarados(a) no bloco principal da Classe) 
-void: Significa que o Método() não tem return(e se tivesse teria que ser posto nele o tipo do return, como int,String etc)
+void: Significa que o Método() não tem return(e se tivesse retun teria que ser posto nele o tipo do return, como int,String etc. static int Funcao(){})
 main: Método principal, o primeiro da classe a ser executado 
 
 
@@ -57,7 +57,7 @@ void metodo2(){instruções;};
 public static void main(String[] args){ ||| Método Main, o primeiro método a ser executado dentro da classe. (Todo programa precisa de ao menos um)
 instruções;
 
-}
+}  ||| "(String[] args)" é um array de Strings, chamado "args", pode passar valores a ele e utiliza-los depois, na execução do arquivo com o comando "java". java Nome_arquivo valor1 valor2
 
 }
 
