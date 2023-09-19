@@ -73,12 +73,28 @@ OBJETOS
 
 class ClassAbstrata{ ||| Classe Abstrata para Objetos
 
-tipo var1; ||| Atributos(vars) do objeto e seus tipos (exemplo: int,String )
-tipo var2;
+private tipo var1; ||| Atributos(vars) do objeto e seus tipos (exemplo: int,String )
+private tipo var2; ||| estão como "private" para não poderem serem mudadas diretamente
+
+
+
+
+public ClassAbstrata(tipo prop1,tipo prop2 ){ ||| Método Constructor, assim que um Objeto for criado, faz tudo desse método.
+
+this.var1 = prop1; ||| Atributos recebendo as props de instancia
+this.var2 = prop2; 
+
+Método(); ||| Método do objeto sendo chamado
+
+}
+
+
 
 void Método(){} ||| Método do Objeto 
 
 }
+
+
 
 
 class ClassAbstrata_Test{ ||| Classe Testadora/Executadora (Mas geralmente outra classe,objeto é que vai ter o método main criando os objetos)
@@ -86,14 +102,15 @@ class ClassAbstrata_Test{ ||| Classe Testadora/Executadora (Mas geralmente outra
 public static void main(String[] args){
 
 
-ClassAbstrata nome_obj1 = new ClassAbstrata(); ||| Criando um Objeto apartir da Classe 
+ClassAbstrata nome_obj1 = new ClassAbstrata(prop1,prop2); ||| Criando um Objeto apartir da Classe, e passando Propriedades pro Met. Constructor dele. 
 
-nome_obj1.var1 = conteudo; ||| Atribuindo valor ao atributo do Objeto
 
 nome_obj1.Método(); ||| Executando Método do Objeto
 }
 
 }
+
+
 
 
 
