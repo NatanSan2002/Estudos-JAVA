@@ -20,7 +20,8 @@ private: conteudo privado para todos os packages, somente a classe que ele está
 
 **Package são pastas e suas subpastas, devem serem importadas etc... (estudar mais)
 
-static: var,metodo, podem ser acessados por toda a Classe diretamente. (devem ser declarados(a) no bloco principal da Classe) 
+static: var é compartilhada por todos os Objetos da Classe, (Metodos tmb???)
+
 void: Significa que o Método() não tem return(e se tivesse retun teria que ser posto nele o tipo do return, como int,String etc. static int Funcao(){})
 
 main: Método principal, o primeiro da classe a ser executado 
@@ -47,6 +48,17 @@ Class_Abstrata [] nome_array = new Class_Abstrata[3]; ||| Declarando Array com t
 nome_array[0] = new Class_Abstrata() ||| Criando OBJ no vetor[0] do array
 nome_array[0].attr = conteudo        ||| dando valor ao atributo(var de instancia) do obj do vetor[0] criado 
 nome_array[0].Met()                  ||| Ativando metodo do OBJ do vetor[0] criado
+
+
+
+ArrayLIST 
+
+import java.util.ArrayList; ||| Importando package do proprio Java 
+
+
+ArrayList<tipo> lista; ||| Declarando Lista, São como Arrays só que com vetores infinitos
+
+
 
 
 
