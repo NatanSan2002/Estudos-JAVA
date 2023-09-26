@@ -11,6 +11,29 @@ java Nome_arquivo ||| Executa código do arquivo.class
 
 GERAL
 
+PACKAGE ||| Package são pastas e suas subpastas que podem serem importados para serem usados por outras Classes de pastas diferentes.
+
+
+ ** pasta pessoas/Users.java**
+
+package pessoas; ||| adiciona Classe ao package "pessoas"
+
+public class Users[...]
+
+-----
+
+ **pasta app/RunApp.java**
+
+import pessoas.Users; ||| importa só a Classe "Users" do Package "pessoas" 
+
+import pessoas.*; ||| importa todo Package "pessoas"
+
+
+public class RunApp[...]
+
+
+----
+
 
 KEY-WORDS: palavras que ficam antes das classes,variaveis etc...
 
@@ -53,13 +76,12 @@ nome_array[0].Met()                  ||| Ativando metodo do OBJ do vetor[0] cria
 
 ArrayLIST 
 
-import java.util.ArrayList; ||| Importando package do proprio Java 
+import java.util.ArrayList; ||| Importando packages do proprio Java  
+import java.util.List;
 
+List<tipo> lista = new ArrayList<>(); ||| Declarando Lista, São como Arrays só que com vetores infinitos
 
-ArrayList<tipo> lista; ||| Declarando Lista, São como Arrays só que com vetores infinitos
-
-
-
+lista.add("Tipo String exemplo); ||| Adicionando Conteudof a Lista;
 
 
 
