@@ -14,6 +14,8 @@ GERAL
 PACKAGE ||| Package são pastas e suas subpastas que podem serem importados para serem usados por outras Classes de pastas diferentes.
 
 
+(Não podem terem o metodo Main para serem importados???)
+
  ** pasta pessoas/Users.java**
 
 package pessoas; ||| adiciona Classe ao package "pessoas"
@@ -74,7 +76,20 @@ nome_array[0].Met()                  ||| Ativando metodo do OBJ do vetor[0] cria
 
 
 
-ArrayLIST 
+import java.util.Arrays;
+
+System.out.println ( Arrays.toString(nome_array) ); ||| Converte Array para visualização;
+
+Arrays.sort(nome_array);   ||| Sort, muda a ordem dos vetores do Array para crescente;
+
+
+
+
+
+
+
+
+LISTas
 
 import java.util.ArrayList; ||| Importando packages do proprio Java  
 import java.util.List;
@@ -157,8 +172,30 @@ FUNÇÕES:
 
 
 ONLY JAVA
+
+
 System.out.print(conteudo)   ||| Exibe na saida do console o conteudo
 System.out.println(conteudo) ||| Quebra a linha e Exibe na saida do console o conteudo 
+
+
+import java.util.Scanner; ||| Importando pacote
+
+Scanner nome_input = new Scanner(System.in);  ||| Scanner, serve para inputs do usuario
+
+
+int num = nome_input.nextInt(); ||| Solicita um valor do Tipo int do usuario
+
+
+* só muda dps do "next" para o tipo esperado, String etc...
+
+
+
+
+
+
+
+
+
 
 
 GENERAL
@@ -170,4 +207,5 @@ int var_nome = (int) (Math.random() * 5); ||| No metodo Math.random temos que es
 
 Integer.parseInt(String)                  ||| Converte valor em String em int (guardar valor em algum lugar) 
 Integer.toString(Int)                     ||| Converte valor em INT para String 
+Arrays.toString(id_names);                ||| Converte Array para String para ser visualizado 
 
