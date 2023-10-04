@@ -43,8 +43,6 @@ default: conteudo disponivel somente para o mesmo package (esse é keyword padr�
 public: conteudo disponivel para qualquer package acessa-lo
 private: conteudo privado para todos os packages, somente a classe que ele está tem acesso
 
-**Package são pastas e suas subpastas, devem serem importadas etc... (estudar mais)
-
 static: var é compartilhada por todos os Objetos da Classe, (Metodos tmb???)
 
 void: Significa que o Método() não tem return(e se tivesse retun teria que ser posto nele o tipo do return, como int,String etc. static int Funcao(){})
@@ -82,6 +80,10 @@ System.out.println ( Arrays.toString(nome_array) ); ||| Converte Array para visu
 
 Arrays.sort(nome_array);   ||| Sort, muda a ordem dos vetores do Array para crescente;
 
+Arrays.equals(array1,array2); ||| Equals, verifica se o o conteudo dos arrays é o mesmo, retorna valor boleano;
+
+Arrays.fill(nome_array,"Texto"); ||| Fill, preenche todos os vetores do Array (metodo 2,valor maximo) com o conteudo do Tipo do Array (String nesse caso);
+
 
 
 
@@ -96,7 +98,36 @@ import java.util.List;
 
 List<tipo> lista = new ArrayList<>(); ||| Declarando Lista, São como Arrays só que com vetores infinitos
 
-lista.add("Tipo String exemplo); ||| Adicionando Conteudof a Lista;
+
+lista.add("Tipo String exemplo); ||| Adicionando Conteudo a Lista;
+
+lista.get(1) ||| Pega conteudo do vetor da lista (vetor 1 nesse exemplo);
+
+lista.size(); ||| Ve o tamanho da Lista (mesma coisa do length em Arrays)
+
+lista.indexOf(conteudo) ||| Busca conteudo nos vetores da Lista, e se achado retorna a posição do vetor dele. se não retorna -1
+
+lista.contains("nome5") ||| Busca conteudo nos vetores da Lista, e retorna um Boleano;
+
+
+
+lista.clear(); ||| Apaga todos os vetores da Lista
+
+lista.isEmpty() ||| verifica se a Lista esta vazia, e retorna um Boleano;
+
+
+
+
+
+import java.util.Collections; 
+
+Collections.sort(lista); ||| Ordena Lista em ordem Crescente. (Qualquer Objeto na verdade)
+
+
+
+for(String texto : prop){ ||| foreach de objetos, Tipo String: propriedade do obj pego 
+System.out.println(texto);
+}
 
 
 
