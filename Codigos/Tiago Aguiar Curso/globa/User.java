@@ -21,6 +21,8 @@ this.name = name;
 this.age = age;
 }
 
-
+public String toString(){
+return "{Nome: "+ this.name +" Idade: "+this.age+"}"; /* subscrevendo metodo */
+}
 
 }

@@ -193,7 +193,14 @@ nome_obj1.Método(); ||| Executando Método do Objeto
 
 
 
+SUBSCREVENDO MÉTODO 
 
+
+public String toString(){  ||| Todo Método padrão do Java (que esta embutido em todos os obj) podem ser redefinidos para fazerem outra coisa
+return "Informações formatas "; 
+}
+
+System.out.println(obj.toString); (só funciona definido em cada Classe separadamente?)
 
 
 

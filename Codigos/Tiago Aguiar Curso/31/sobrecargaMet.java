@@ -12,6 +12,8 @@ System.out.println(rodolfo.GetDetails(false)); // Aqui pela é a mesma função 
 
 System.out.println(rodolfo.GetDetails());
 
+System.out.println(rodolfo.GetDetails(true));
+
 }
 
 }
