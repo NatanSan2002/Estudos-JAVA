@@ -43,7 +43,21 @@ default: conteudo disponivel somente para o mesmo package (esse é keyword padr�
 public: conteudo disponivel para qualquer package acessa-lo
 private: conteudo privado para todos os packages, somente a classe que ele está tem acesso
 
-static: var é compartilhada por todos os Objetos da Classe, (Metodos tmb???)
+static: o conteudo da Var é compartilhada por todos os Objetos da Classe
+
+*
+Métodos static são feitos para alterarem uma Var static pela própria Classe
+
+exemplo: NomeClasse.Metodo(valor); 
+
+||| Aqui Não é um obj da Classe mas ela própria que chama um Método que é static, e coloca um valor que ira modificar uma Var static
+
+(o Método static não pode alterar a Var pelo this.var pois não esta em um OBJ isolado e sim na Classe em geral)
+
+*
+
+
+
 
 void: Significa que o Método() não tem return(e se tivesse retun teria que ser posto nele o tipo do return, como int,String etc. static int Funcao(){})
 
@@ -246,4 +260,12 @@ int var_nome = (int) (Math.random() * 5); ||| No metodo Math.random temos que es
 Integer.parseInt(String)                  ||| Converte valor em String em int (guardar valor em algum lugar) 
 Integer.toString(Int)                     ||| Converte valor em INT para String 
 Arrays.toString(id_names);                ||| Converte Array para String para ser visualizado 
+
+
+
+
+
+Objeto1.equals(Objeto2); ||| Faz uma comparação via código Hash (id de cada objeto) e retorna true ou falso se for diferente
+
+*tem como subscrever esse método para poder comparar cada prop do obj em sí, mas o cara do video não explicou direito
 
